@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+.space {
+  margin: 15vh;
+  opacity: 0;
+}
 
 .wrapper {
   height: 100vh;
@@ -53,13 +57,16 @@ header {
 }
 
 .background {
-  transform: translateZ(-20px) scale(4);
+  transform: translateZ(-20px) scale(6);
 }
 
 .foreground {
   transform: translateZ(-5px) scale(1);
 }
 
+.chesspiece {
+  transform: translateZ(0px);
+}
 .background {
   position: absolute;
   height: 100%;
@@ -71,6 +78,14 @@ header {
 .foreground {
   position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: fit;
+  z-index: -1;
+}
+
+.chesspiece {
+  position: absolute;
+  height: auto;
   width: 100%;
   object-fit: fit;
   z-index: -1;
@@ -104,12 +119,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .nav {
-    margin-top: 0px;
-    background-color: rgba(0, 0, 0, 0.705);
-    padding: 10px;
-  }
-
   nav ul li {
     margin: 0 1px;
   }

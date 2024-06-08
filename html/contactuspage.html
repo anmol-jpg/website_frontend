@@ -3,59 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f0f0f0;
-      }
-      .login-container {
-        width: 300px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .login-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .login-container input[type="text"],
-      .login-container input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-      .login-container input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        border: none;
-        border-radius: 4px;
-        color: #fff;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .login-container input[type="submit"]:hover {
-        background-color: #0056b3;
-      }
-    </style>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css and js/contacctstyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="login-container">
-      <h2>Login</h2>
-      <form action="#">
-        <input type="text" placeholder="Username" required />
-        <input type="password" placeholder="Password" required />
-        <input type="submit" value="Login" />
-      </form>
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div class="buttens">
+                <a
+                  href="https://www.facebook.com/aaryanboy12"
+                  class="social-button social-button--facebook"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/aaryan_boy12/"
+                  class="social-button social-button--instagram"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.snapchat.com/add/aryanboy1137?sender_web_id=f55c8fab-3ab9-4233-8db6-6df25d183f85&device_type=desktop&is_copy_url=true"
+                  class="social-button social-button--snapchat"
+                  aria-label="Snapchat"
+                >
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                <a
+                  href="https://github.com/aaryanboy"
+                  class="social-button social-button--github"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="app-contact">GMAIL : aaryan_boy12@gmail.com</div>
+              <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    class="app-form-control"
+                    placeholder="NAME"
+                    value="Aryan Boy"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="EMAIL" />
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="CONTACT NO" />
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" placeholder="MESSAGE" />
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button class="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
