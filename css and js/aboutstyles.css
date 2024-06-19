@@ -1,9 +1,28 @@
 body {
   margin: 0;
+  background-image: url(/photos/aboutpagebackground.jpg);
+  background-attachment: scroll; /* Makes the background scroll with the contentq  */
 }
 .space {
   margin: 15vh;
   opacity: 0;
+}
+
+.space2 {
+  height: 108px;
+  opacity: 0;
+}
+.middle {
+  background-image: url(/photos/buttonbackground.jpg);
+  background-size: cover; /* Adjust background size */
+  background-attachment: fixed; /* Fix the background image */
+  color: white;
+  /* Enable vertical scrolling */
+  border-radius: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -12,36 +31,35 @@ body {
   overflow-x: hidden;
   perspective: 10px;
 }
-
-.nav {
-  margin-top: 50px;
-  position: sticky;
-  top: 25px;
-}
-nav ul {
-  list-style: none;
+nav {
+  text-align: center;
   display: flex;
-  justify-content: center;
-
-  padding: 0;
+  padding: 10px 0;
+}
+.nav {
+  position: absolute;
+  top: 108px;
+  left: 50%; /* Optional: Adjust to center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centers the div both horizontally and vertically */
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
+nav button {
   color: white;
   text-shadow: 0 0 9px black;
   text-decoration: none;
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 25px;
-  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  background: black;
+  margin: 0 5px;
 }
 
-nav ul li a:hover {
-  background: white;
+nav button:hover {
+  background: rgb(164, 164, 164);
   color: black;
   text-shadow: 0 0 0;
 }
@@ -71,7 +89,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fit;
   z-index: -1;
 }
 
@@ -79,15 +97,15 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: fit;
+  object-fit: contain;
   z-index: -1;
 }
 
 .chesspiece {
   position: absolute;
   height: auto;
-  width: 100%;
-  object-fit: fit;
+  width: 105%;
+  object-fit: contain;
   z-index: -1;
 }
 
@@ -98,9 +116,10 @@ header {
 }
 
 section {
-  font-size: 2rem;
-  padding: 2rem;
-  background-color: #333;
+  padding: 5px 2rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: #000000;
   color: white;
 }
 
@@ -111,10 +130,6 @@ section {
 
   .title {
     font-size: 5rem;
-  }
-
-  section {
-    font-size: 1.5rem;
   }
 }
 
@@ -128,9 +143,5 @@ section {
 
   .title {
     font-size: 3rem;
-  }
-
-  section {
-    font-size: 1rem;
   }
 }
